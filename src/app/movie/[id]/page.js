@@ -1,0 +1,57 @@
+import React from "react";
+
+const page = () => {
+  return (
+    <div>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            <div>
+              <h1 className="text-xl font-semibold mb-2">
+                Netflix\ <span className="text-red-500">Show</span>{" "}
+              </h1>
+            </div>
+            <div class="rounded-lg h-80  overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                src="data:image/jpeg;base64,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"
+              />
+            </div>
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4">
+                  Set within a year after the events of Batman Begins, Batman,
+                  Lieutenant James Gordon, and new district attorney Harvey Dent
+                  successfully begin to round up the criminals that plague
+                  Gotham City until a mysterious and sadistic criminal
+                  mastermind known only as the Joker appears in Gotham, creating
+                  a new wave of chaos. Batman’s struggle against the Joker
+                  becomes deeply personal, forcing him to “confront everything
+                  he believes” and improve his technology to stop him. A love
+                  triangle develops between Bruce Wayne, Dent and Rachel Dawes.
+                </p>
+                <a class="text-indigo-500 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default page;
